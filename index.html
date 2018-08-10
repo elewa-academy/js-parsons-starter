@@ -30,29 +30,29 @@
         <br>
         <br>
         <br>
-        <div id="parsons">
+        <div id="ex-1">
             <div name="parsons-boxes">
                 <!-- modify this line's id -->
-                <div id="shuffled-let-vs-var" name="shuffled" class="sortable-code"></div>
+                <div id="shuffled-ex-1" name="shuffled" class="sortable-code"></div>
                 <!-- modify this line's id -->
-                <div id="sorted-let-vs-var" name="sorted" class="sortable-code"></div> 
+                <div id="sorted-ex-1" name="sorted" class="sortable-code"></div> 
                 <div style="clear:both;"></div>
             </div>
 
             <div name="parsons-buttons">
                 <!-- modify this line's id -->
-                <a href="#" id="reshuffle-let-vs-var" name="reshuffle">Re-Shuffle</a>
+                <a href="#" id="reshuffle-ex-1" name="reshuffle">Re-Shuffle</a>
                 <!-- modify this line's id -->
-                <a href="#" id="feedback-let-vs-var" name="feedback">Get feedback</a>
+                <a href="#" id="feedback-ex-1" name="feedback">Get feedback</a>
             </div>
             <script>
                 // define your challenge here
                 config = {};
 
-                config.shuffled_id = "shuffled-let-vs-var";
-                config.sorted_id = "sorted-let-vs-var";
-                config.reshuffle_id = "reshuffle-let-vs-var";
-                config.feedback_id = "feedback-let-vs-var";
+                config.shuffled_id = "shuffled-ex-1";
+                config.sorted_id = "sorted-ex-1";
+                config.reshuffle_id = "reshuffle-ex-1";
+                config.feedback_id = "feedback-ex-1";
                 config.challenge = 
                         "// {number, 12345} -> {number, 345} \n" +
                         "Number(String(12345).replace(\"12\", \"\")); \n" +
@@ -64,6 +64,37 @@
                         "  Number(\"345\"); \n" +
                         "  //  {number, 345}\n" +
                         "  \"345\" #distractor";
+
+                init_section(config);
+            </script>
+            <br>
+        </div>
+        <div id="ex-2">
+            <div name="parsons-boxes">
+                <!-- modify this line's id -->
+                <div id="shuffled-ex-2" name="shuffled" class="sortable-code"></div>
+                <!-- modify this line's id -->
+                <div id="sorted-ex-2" name="sorted" class="sortable-code"></div> 
+                <div style="clear:both;"></div>
+            </div>
+
+            <div name="parsons-buttons">
+                <!-- modify this line's id -->
+                <a href="#" id="reshuffle-ex-2" name="reshuffle">Re-Shuffle</a>
+                <!-- modify this line's id -->
+                <a href="#" id="feedback-ex-2" name="feedback">Get feedback</a>
+            </div>
+            <script>
+                // define your challenge here
+                config = {};
+
+                config.shuffled_id = "shuffled-ex-2";
+                config.sorted_id = "sorted-ex-2";
+                config.reshuffle_id = "reshuffle-ex-2";
+                config.feedback_id = "feedback-ex-2";
+                config.challenge = 
+                        "another \n" + 
+                        "exercise";
 
                 init_section(config);
             </script>
