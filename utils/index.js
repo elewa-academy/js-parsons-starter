@@ -19,6 +19,8 @@ function displayErrors(fb) {
         feedback_id: String
             - id for the feedback button in this section
 */
+var config;
+
 function init_section(config){
     var parson = new ParsonsWidget({
         'sortableId': config.sorted_id,
